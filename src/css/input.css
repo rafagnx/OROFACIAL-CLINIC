@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-transparent {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
