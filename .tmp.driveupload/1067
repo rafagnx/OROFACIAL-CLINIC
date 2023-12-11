@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEPY1KQGKG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CEPY1KQGKG');
+</script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Somos uma das maiores clínicas do Brasil especializada em Harmonização Facial. Preenchimento labial / facial, bioestimulador de colágeno, bichectomia, lipo de papada e muito mais." />
+  <meta name="keywords"
+    content="Somos uma das maiores clínicas do Brasil especializada em Harmonização Facial. Preenchimento labial / facial, bioestimulador de colágeno, bichectomia, lipo de papada e muito mais." />
+
+  <meta property="og:title"
+    content="Somos uma das maiores clínicas do Brasil especializada em Harmonização Facial. Preenchimento labial / facial, bioestimulador de colágeno, bichectomia, lipo de papada e muito mais." />
+  <meta property="og:description"
+    content="Somos uma das maiores clínicas do Brasil especializada em Harmonização Facial. Preenchimento labial / facial, bioestimulador de colágeno, bichectomia, lipo de papada e muito mais." />
+  <meta property="og:image" content="img/logo.png" />
+
+  <meta name="author" content="Rafael Alves - Front End Engineer" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Português" />
+
+  <!-- ?Montserrat & OpenSans Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- ?Fav Icon -->
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+
+  <!-- ?Tailwind CSS -->
+  <link rel="stylesheet" href="./src/css/styles.css" />
+
+  <!-- ?JavaScript -->
+  <script src="./javascript/scroll.js" defer></script>
+
+  <!-- ?AOS e Alpine lib -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js" defer></script>
+
+  <!-- ?Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ?Title -->
+  <title>Orofacial Clinic - Hamonização Facial e Corporal </title>
+  
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '229527033102852');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=229527033102852&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+
+</head>
+
+<body class="m-0 p-0 overflow-x-hidden">
+  <!-- ?Header -->
+  <header class="bg-blue text-white fixed w-full py-2 z-50 font-medium font-montserrat">
+    <div class="container mx-auto px-3 py-2 flex items-center justify-between">
+      <a href="#main">
+        <img src="./img/logo.png" alt="Logo"
+          class="w-14 h-auto ml-3 mr-12 hover:scale-110 transition-transform transform duration-300" />
+      </a>
+
+      <nav class="hidden md:block tracking-wider">
+        <ul class="space-x-4">
+          <li class="inline-block">
+            <a href="#about" class="hover:text-Orange transition-colors duration-300">Sobre</a>
+          </li>
+          <li class="inline-block">
+            <a href="#services" class="hover:text-Orange transition-colors duration-300">Serviços</a>
+          </li>
+          <!-- <li class="inline-block">
+            <a href="#subscription" class="hover:text-Orange transition-colors duration-300">Planos</a>
+          </li> -->
+          <li class="inline-block">
+            <a href="#team" class="hover:text-Orange transition-colors duration-300">Procedimentos</a>
+          </li>
+          <li class="inline-block">
+            <a href="#location" class="hover:text-Orange transition-colors duration-300">Unidades</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="menu-toggle"
+          class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-300 hover:text-white hover:border-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ?Mobile header -->
+  <div id="mobile-menu" class="md:hidden hidden bg-blue text-white fixed w-full z-10 font-montserrat">
+    <ul class="py-4 px-2 space-y-4 text-center">
+      <li class="block py-2 px-4 hover:bg-gray-700 hover:text-Orange transition-colors duration-300">
+        <a href="#about">Sobre</a>
+      </li>
+      <li class="block py-2 px-4 hover:bg-gray-700 hover:text-Orange transition-colors duration-300">
+        <a href="#services">Serviços</a>
+      </li>
+      <li class="block py-2 px-4 hover:bg-gray-700 hover:text-Orange transition-colors duration-300">
+        <a href="#subscription">Planos</a>
+      </li>
+      <li class="block py-2 px-4 hover:bg-gray-700 hover:text-Orange transition-colors duration-300">
+        <a href="#team">Procedimentos</a>
+      </li>
+      <li class="block py-2 px-4 hover:bg-gray-700 hover:text-Orange transition-colors duration-300">
+        <a href="#location">Unidades</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <img src="./img/arrowDown.gif"
+      class="w-36 h-auto absolute top-[29rem] md:top-[22rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      alt="Arrow Down" />
+    </div>
+    <img id="banner-image" src="./img/banner.jpg" alt="Banner" class="h-full w-full object-cover" />
+
+    <section id="main" class="relative h-screen w-screen overflow-hidden font-montserrat">
+      <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-80">
+        <div class="p-5 rounded-md text-white text-center">
+          <h1 class="text-4xl font-bold uppercase w-[80vw] md:w-[60vw]" data-aos="fade-up" data-aos-duration="1000">
+            Seja sua melhor versão.
+          </h1>
+          <p class="text-sm mt-7 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            Horário de funcionamento: 09:00 às 18:00
+          </p>
+
+          <!-- Button to direct to WhatsApp -->
+          <div class="flex justify-center py-2">
+            <a href="https://wa.me/2225230079/?text=Venho%20do%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+              target="_blank"
+              class="bg-Orange text-blue px-20 py-2 font-semibold rounded-md hover:brightness-110 transition-all duration-300 font-montserrat">
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <a href="https://wa.me/message/VLXGG5A4SLNLJ1"
+      class="fixed bottom-0 right-0 p-2 transform hover:scale-110 transition-transform duration-300 z-40">
+      <img src="./img/Whatsapp.png" alt="Whatsapp" />
+    </a>
+    </section>
+
+    <!-- ?About section -->
+    <section class="h-screen bg-blue p-5 flex justify-center items-center" id="about">
+      <div class="grid md:grid-cols-2 gap-2 md:gap-12 items-center text-center md:ml-20">
+        <div class="p-4 md:p-0 flex justify-center">
+          <img class="w-full h-auto" src="./img/mosa.png" alt="Mosaico" />
+        </div>
+
+        <div class="p-4 md:p-0 flex flex-col justify-center md:text-left text-white" data-aos="fade-up"
+          data-aos-duration="1000">
+          <h2 class="text-3xl font-bold my-4 text-Orange md:w-[30rem] mx-auto md:mx-0 font-montserrat">
+            Bem-vindo(a) à Orofacial Clinic!
+          </h2>
+
+          <p class="text-sm mb-2 md:text-left md:w-[30rem] mx-auto md:mx-0">
+            Somos uma das maiores clínicas do Brasil especializada em Harmonização Facial e corporal. Preenchimento labial /
+            facial, bioestimulador de colágeno, bichectomia, lipo de papada, Toxina Botulínica e muito mais.
+          </p>
+          <p class="text-sm mb-2 md:text-left md:w-[30rem] mx-auto md:mx-0">
+            Visite-nos e descubra por que somos uma escolha confiável quando
+            se trata de cuidados corporais. Estamos aqui para ajudá-lo(a) a
+            realçar sua aparência e proporcionar uma experiência única.
+          </p>
+
+          <p class="text-sm mb-2 font-bold md:text-left md:w-[32rem] mx-auto md:mx-0">
+            Horário de funcionamento: 09:00 às 18:00.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ?Services section -->
+    <section
+      class="h-full bg-blue text-white p-5 flex flex-col text-center justify-center items-center pb-5 md:pb-0 md:my-5"
+      id="services">
+      <!-- !Text -->
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl font-bold my-4 text-Orange md:w-[60rem] mx-auto font-montserrat">
+          SERVIÇOS
+        </h2>
+
+        <p class="text-sm mb-2 md:w-text-white [60rem] mx-auto">
+        </p>
+
+        <p class="text-sm mb-2 font-bold text-white md:w-full mx-auto md:mx-0">
+          Nossa busca pela perfeição estética nos permite oferecer uma ampla variedade de procedimentos de harmonização
+          facial, desde técnicas clássicas e consagradas até as mais inovadoras do mercado. Priorizamos a obtenção de
+          uma harmonia natural, realçando a beleza única de cada pessoa.
+
+          Além disso, dedicamo-nos aos cuidados faciais completos, com serviços sob medida para atender às necessidades
+          específicas de cada indivíduo. Nossos tratamentos visam aprimorar contornos e revitalizar a pele,
+          proporcionando a todos uma aparência impecável.
+        </p>
+      </div>
+
+      <!-- !Cards -->
+      <div class="flex flex-wrap justify-center mt-8 pb-5 font-montserrat">
+        <div class="w-full md:w-1/3 p-4" data-aos="flip-down" data-aos-duration="1500">
+          <div class="bg-white rounded-lg shadow-lg">
+            <div class="relative overflow-hidden">
+              <img src="./img/boto.jpg" alt="Imagem 2"
+                class="w-full h-auto md:h-[23rem] rounded-t-lg transition-transform duration-300 transform-gpu hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="flex flex-col justify-center items-center text-center">
+                  <img src="./img/logo.png" class="w-12 h-auto" alt="Logo" />
+                  <p class="text-white text-sm my-2 w-64">
+                    A função da Toxina Botulínica é bloquear temporariamente a liberação de neurotransmissores que causam a
+                    contração muscular. Isso resulta em uma redução temporária das rugas e linhas faciais,
+                    proporcionando um efeito estético de rejuvenescimento.
+                  </p>
+
+                  <p class="text-white text-sm w-64">
+                    Seja qual for o estilo que você busca, nossa equipe de
+                    profissionais está pronta para proporcionar um resultado incrível.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <p class="font-bold text-gray-800">Toxina Botulínica</p>
+                <p class="bg-darkBlue text-white p-2 rounded-md text-sm">
+                  Consulte já!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 p-4" data-aos="flip-down" data-aos-duration="1500">
+          <div class="bg-white rounded-lg shadow-lg">
+            <div class="relative overflow-hidden">
+              <img src="./img/full fios.gif" alt="Imagem 3"
+                class="w-full h-auto md:h-[23rem] rounded-t-lg transition-transform duration-300 transform-gpu hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="flex flex-col justify-center items-center text-center">
+                  <img src="./img/logo.png" class="w-12 h-auto" alt="Logo" />
+                  <p class="text-white text-sm my-2 w-64">
+                    Essa técnica combina a elevação das maçãs do rosto e a definição da linha da mandíbula para um
+                    resultado natural e duradouro.
+                  </p>
+
+                  <p class="text-white text-sm w-64">
+                    essas técnicas exclusivas podem te proporcionar um rejuvenescimento de até 20 anos em uma única
+                    sessão. Com profissionais qualificados e máxima segurança, garantimos resultados transformadores.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <p class="font-bold text-gray-800">Lift Mandibular e temporal</p>
+                <p class="bg-darkBlue text-white p-2 rounded-md text-sm">
+                  Consulte já!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 p-4" data-aos="flip-down" data-aos-duration="1500">
+          <div class="bg-white rounded-lg shadow-lg">
+            <div class="relative overflow-hidden">
+              <img src="./img/abano.jpg" alt="Imagem 1"
+                class="w-full h-auto md:h-[23rem] rounded-t-lg transition-transform duration-300 transform-gpu hover:scale-110" />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="flex flex-col justify-center items-center text-center">
+                  <img src="./img/logo.png" class="w-12 h-auto" alt="Logo" />
+                  <p class="text-white text-sm my-2 w-64">
+                    Diga adeus à insegurança e dê as boas-vindas a um novo visual confiante. Nossa equipe especializada
+                    oferece um procedimento rápido e seguro para corrigir as orelhas proeminentes, garantindo resultados
+                    naturais e harmoniosos.
+                  </p>
+
+                  <p class="text-white text-sm w-64">
+                    orelha de abano nunca mais!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex justify-between items-center">
+                <p class="font-bold text-gray-800">Otomodelação</p>
+                <p class="bg-darkBlue text-white p-2 rounded-md text-sm">
+                  Consulte já!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="w-[80vw] mx-auto" id="subscription" />
+
+     <!-- aqui vai o a parte de cobrimos o valor -->
+  
+    <!-- ?Team section -->
+    <section class="h-full bg-darkBlue p-5 flex flex-col text-center md:pb-0 md:my-5 text-Orange" id="team">
+      <!-- !Text -->
+
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl font-bold my-4 md:w-[60rem] mx-auto font-montserrat">
+          NOSSOS PROCEDIMENTOS
+        </h2>
+
+        <p class="text-sm text-white mb-2 md:w-[60rem] mx-auto">
+          Com anos de excelência e um toque de estilo único, nossa equipe é composta por verdadeiros especialistas em
+          procedimentos estéticos de harmonização facial. Vamos além de meros profissionais, somos artistas que dominam
+          as técnicas de embelezamento facial, combinando habilidade técnica com uma visão artística singular, elevando
+          cada tratamento de harmonização a um nível superior.
+        </p>
+
+      </div>
+
+      <!-- ?DESKTOP VERSION -->
+      <div class="hidden md:block" data-aos="fade-up" data-aos-duration="1500">
+        <ul class="flex flex-wrap flex-row space-x-4 justify-center items-center mt-4 mb-10">
+          <li>
+            <div class="w-full relative">
+              <div class="group">
+                <img src="./img/fios.png" alt="Barber 1"
+                  class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+                <div
+                  class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p class="font-bold text-Orange my-2 text-center justify-center">
+                    SAIBA MAIS SOBRE A TÉCNICA DE FULL FIOS
+                  </p>
+                  <div class="flex flex-row space-x-2 justify-center items-center mx-0">
+
+                    <a href="https://www.instagram.com/p/CuIA8rsxLWb/?img_index=1"
+                      class="transform transition duration-300 hover:scale-110">
+                      <img src="./img/instagram_white.png" alt="Instagram" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <br> </br>
+            <div class="w-full relative">
+              <div class="group">
+                <img src="./img/lasers.png" alt="Barber 2"
+                  class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+                <div
+                  class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p class="font-bold text-Orange my-2 text-center">
+                    SAIBA MAIS SOBRE O CURSO DE FULL LASER
+                  </p>
+
+                  <a href="https://www.instagram.com/p/CupsOjtuD7L/?img_index=1"
+                    class="transform transition duration-300 hover:scale-110">
+                    <img src="./img/instagram_white.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+            </div>
+      </div>
+      </li>
+      <br> </br>
+      <li>
+        <div class="w-full relative">
+          <div class="group">
+            <img src="./img/lift.png" alt="Barber 3"
+              class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="font-bold text-Orange my-2 text-center">
+                SAIBA MAIS SOBRE A TÉCNICA DE LIP FIFT
+              </p>
+              <a href="https://www.instagram.com/p/CusDJP-xZpX/?img_index=1"
+                class="transform transition duration-300 hover:scale-110">
+                <img src="./img/instagram_white.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </li>
+      <br> </br>
+      <li>
+        <div class="w-full relative">
+          <div class="group">
+            <img src="./img/oto.png" alt="Barber 4"
+              class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="font-bold text-Orange my-2 text-center">
+                SAIBA MAIS SOBRE A TÉCNICA DE OTOMODELAÇÃO
+              </p>
+
+              <a href="#" class="transform transition duration-300 hover:scale-110">
+                <img src="./img/instagram_white.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </li>
+      <br> </br>
+      <li>
+        <div class="w-full relative mt-4">
+          <div class="group">
+            <img src="./img/procedimentoss.png" alt="Barber 5"
+              class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="font-bold text-Orange my-2 text-center">
+                SAIBA MAIS SOBRE OS NOSSOS PROCEDIMENTOS
+              </p>
+
+              <a href="#" class="transform transition duration-300 hover:scale-110">
+                <img src="./img/instagram_white.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </li>
+      <br> </br>
+      <li>
+        <div class="w-full relative mt-4">
+          <div class="group">
+            <img src="./img/corpo.png" alt="Barber 6"
+              class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="font-bold text-Orange my-2 text-center">
+                SAIBA MAIS SOBRE OS NOSSOS PROCEDIMENTOS CORPORAIS
+              </p>
+
+              <a href="https://www.instagram.com/p/Cuo7fp8s5Sb/"
+                class="transform transition duration-300 hover:scale-110">
+                <img src="./img/instagram_white.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </li>
+           <li>
+        <h2 class="text-3xl font-bold my-4 md:w-[60rem] mx-auto font-montserrat text-Orange" id="location"
+          data-aos="fade-up" data-aos-duration="1000">
+          SEJA NOSSO ALUNO
+      </h2>
+        
+        <div class="w-full relative mt-4">
+          <div class="group">
+            <img src="./img/curso.png" alt="Barber 7"
+              class="w-full transition-opacity duration-300 group-hover:opacity-50" />
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="font-bold text-Orange my-2 ">
+                SAIBA MAIS SOBRE OS NOSSOS CURSOS
+              </p>
+
+              <a href="https://wa.me/message/WY2YVX3V3ZHHG1" class="transform transition duration-300 hover:scale-110">
+                <img src="./img/Whatsapp.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </li>
+      </ul>
+      </div>
+
+      <!-- ?Info -->
+      <div class="mt-2 flex flex-row justify-center text-center pb-5">
+        <button id="carousel-prev" class="carousel-nav carousel-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-14 h-14">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"></path>
+          </svg>
+        </button>
+
+        <div class="slide-counter mt-4"></div>
+
+        <button id="carousel-next" class="carousel-nav carousel-next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-14 h-14">
+            <path d="M8.59 7.41L10 6l6 6-6 6-1.41-1.41L13.17 12 8.59 7.41z"></path>
+          </svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    
+    
+    <!-- ?Locations section -->
+    <section
+      class="h-full bg-blue p-5 flex flex-col text-center justify-center text-white items-center pb-5 md:pb-0 md:my-5">
+      
+      <!-- !Text -->
+<section id="location" class="h-full bg-blue p-5 flex flex-col text-center justify-center text-white items-center pb-5 md:pb-0 md:my-5">
+
+      <h2 class="text-3xl font-bold my-4 md:w-[60rem] mx-auto font-montserrat text-Orange" id="location"
+        data-aos="fade-up" data-aos-duration="1000">
+        NOSSAS UNIDADES
+      </h2>
+
+      <!-- !Cards -->
+      <div class="flex flex-wrap justify-center mt-8 pb-5">
+        <div class="w-full md:w-1/2 p-4 relative" data-aos="flip-left" data-aos-duration="1500">
+          <div class="rounded-lg overflow-hidden">
+            <img src="./img/location_01.png" alt="Imagem 1"
+              class="w-full h-auto md:h-[23rem] rounded-t-lg transition-transform duration-300 transform hover:scale-110" />
+          </div>
+          <p class="text-center mt-5 font-montserrat">
+            <a href="https://goo.gl/maps/6quxL6EBBXWPA3Lv9" class="font-bold" target="_blank">
+              Endereço: R. Souza Cardoso, 56 - Andar 1 - Centro, 28625-520
+              <br />
+              Nova Friburgo - RJ
+            </a>
+          </p>
+
+        </div>
+
+        <div class="w-full md:w-1/2 p-4 relative" data-aos="flip-right" data-aos-duration="1500">
+          <div class="rounded-lg overflow-hidden">
+            <img src="./img/Location_02.png" alt="Imagem 1"
+              class="w-full h-auto md:h-[23rem] rounded-t-lg transition-transform duration-300 transform hover:scale-110" />
+          </div>
+          <p class="text-center mt-5 font-montserrat">
+            <a href="https://goo.gl/maps/u8K8GK7Wzfbr15b47" class="font-bold" target="_blank">
+              Av. das Américas, 500 - Bloco 3 Loja 117, 22640-904
+              <br />
+              Barra da Tijuca - RJ
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ?Footer section -->
+    <footer
+      class="h-full bg-blue p-5 flex flex-col text-center text-white justify-center items-center pb-5 md:pb-0 md:my-5">
+      <!-- ?Socials -->
+
+      <a href="https://www.instagram.com/orofacialclinic/" class="transform transition duration-300 hover:scale-110"
+        data-aos="flip-down" data-aos-duration="1000">
+        <img src="./img/instagram_white.png" alt="Instagram" />
+      </a>
+      </div>
+
+      <!-- ?Logo -->
+      <a href="#main">
+        <img src="./img/logo.png" alt="Logo"
+          class="w-40 h-auto my-8 hover:scale-110 transition-transform transform duration-300" />
+      </a>
+
+      <!-- ?Text -->
+      <p class="text-gray-400 mb-2">
+        &copy; 2023 Orofacial Clinic. Todos os direitos reservados. - Feito por <a target="_blank"
+          href="https://www.github.com/rafagnx" class="hover:text-Orange underline">rafagnx</a>.
+      </p>
+
+      <!-- ?Links -->
+      <ul class="flex space-x-4 mb-14 md:mb-0">
+        <li>
+          <a href="https://wa.me/message/VLXGG5A4SLNLJ1"
+            class="text-gray-400 hover:text-Orange transition-colors duration-300">Trabalhe Conosco</a>
+        </li>
+        <li>
+          <a href="https://wa.me/message/VLXGG5A4SLNLJ1"
+            class="text-gray-400 hover:text-Orange transition-colors duration-300">Contato</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-400 hover:text-Orange transition-colors duration-300">Política de Privacidade</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
